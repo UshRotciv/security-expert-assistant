@@ -1,38 +1,121 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f7f9;
+  color: #333;
+  margin: 0;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #005a9e;
   color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.controls {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.controls input,
+.controls select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.rule-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.rule-card {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.rule-card:hover {
+  transform: translateY(-5px);
+}
+
+.rule-card h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #005a9e;
+}
+
+.rule-card p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.rule-card .label {
+  font-weight: bold;
+  color: #555;
+}
+
+.risk-level {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.risk-level-1 { background-color: #4caf50; } /* Low */
+.risk-level-2 { background-color: #ffc107; } /* Medium */
+.risk-level-3 { background-color: #ff9800; } /* High */
+.risk-level-4 { background-color: #f44336; } /* Very High */
+.risk-level-5 { background-color: #b71c1c; } /* Critical */
+
+.external-comm {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.external-comm-allowed {
+  background-color: #e8f5e9;
+  border-left: 4px solid #4caf50;
+}
+
+.external-comm-disallowed {
+  background-color: #ffebee;
+  border-left: 4px solid #f44336;
+}
+
+.rule-card pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: inherit;
 }

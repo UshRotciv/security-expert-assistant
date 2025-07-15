@@ -1,0 +1,55 @@
+
+[
+  {
+    "id": "RULE-001",
+    "category": "資訊資產管理",
+    "assetType": "通用數位檔案",
+    "scenario": "將公司文件或專案資料存放於個人的Google Drive、Dropbox等公開雲端硬碟。",
+    "guideline": "嚴格禁止將公司資料存放於個人雲端硬碟、USB隨身碟、個人電腦或任何私人儲存裝置。所有專案檔案皆須儲存於公司指定的OneDrive、Teams或伺服器位置。",
+    "riskLevel": 4,
+    "responsibility": "所有同仁",
+    "externalCommunication": {
+      "allowed": false,
+      "conditions": "任何情況下皆不允許將本機密等級的資料存放於非公司指定的儲存媒體。"
+    }
+  },
+  {
+    "id": "RULE-002",
+    "category": "實體與環境安全",
+    "assetType": "紙本文件",
+    "scenario": "在印表機旁看到他人遺留的文件，出於好奇或好心，拿起來翻閱內容並試圖送回給失主。",
+    "guideline": "發現他人遺忘在印表機的文件時，應避免翻閱。可直接通知失主前來取回，或將文件交由部門助理或指定的資安窗口統一處理。",
+    "riskLevel": 2,
+    "responsibility": "所有同仁",
+    "externalCommunication": {
+      "allowed": false,
+      "conditions": "紙本文件不得攜出公司，除非獲得主管授權並有登記記錄。"
+    }
+  },
+  {
+    "id": "RULE-003",
+    "category": "資訊資產管理",
+    "assetType": "通用數位檔案",
+    "scenario": "為了方便，將工作報告或程式碼片段貼到公開的AI工具(如ChatGPT、Google Gemini)中，要求其潤飾、除錯或提供建議。",
+    "guideline": "禁止將任何含有公司內部資訊、專案資料、程式碼或客戶數據的內容輸入至公開的、非公司授權的AI服務中。這類行為等同於將公司資產公開。",
+    "riskLevel": 4,
+    "responsibility": "所有同仁",
+    "externalCommunication": {
+      "allowed": false,
+      "conditions": "嚴格禁止透過外部AI工具處理任何公司內部資訊。"
+    }
+  },
+  {
+    "id": "RULE-004",
+    "category": "法律與合規性",
+    "assetType": "設計產出 (數位與實體)",
+    "scenario": "將參與專案的設計圖、策略簡報或模型照片，放到個人的線上作品集或求職平台上。",
+    "guideline": "所有在職期間的產出，其智慧財產權均屬於公司。未經公司明確書面授權，嚴禁將任何專案相關的產出（無論是草稿、過程或最終稿）公開於任何外部平台。",
+    "riskLevel": 5,
+    "responsibility": "所有同仁",
+    "externalCommunication": {
+      "allowed": false,
+      "conditions": "任何形式的公開展示皆需通過法務及專案最高主管的審批。"
+    }
+  }
+]
